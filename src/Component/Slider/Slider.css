@@ -1,0 +1,82 @@
+.s-container{
+    position: relative;
+    
+}
+.s-container .swiper{
+    width: 70%;
+    height: 12rem;
+    position: unset;
+}
+.s-container .swiper-slide{
+    background-color: aliceblue;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.s-container .swiper-button-prev{
+    left: 6rem;
+    color: black;
+}
+
+.s-container .swiper-button-next{
+right: 6rem;
+color: black;
+}
+
+.left-s{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-s .name{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-s .name>:nth-child(1){
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.left-s .name>:nth-child(2){
+    font-size: 12px;
+}
+ .price{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.btnn{
+    color : black ;
+    font-size:1rem;
+    border-radius: 10px;
+    background-color: var(--bg);
+    border: none;
+    cursor: pointer;
+    padding: 5PX;
+    width: fit-content;
+}
+
+.img-p{
+      transform:rotate(-20deg);
+   position: absolute;
+   right: 0;
+   width: 40%;
+   height: 100%;
+   bottom: -20%;
+}
+@media screen and (max-width : 856px) {
+    .s-container.swiper{
+        width: 90%;
+        height: 10rem;
+    }
+    .s-container .swiper-button-next ,
+    .s-container .swiper-button-prev{
+        display: none;
+    }
+    .img-p{
+        height: 77%;
+    }
+}

@@ -1,0 +1,66 @@
+.vritsual{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+.v-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.v-left >:nth-child(1){
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem;
+    font-weight: bold;
+    
+}
+.v-left >:nth-child(2 ){
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem;
+    
+}
+.v-left >:nth-child(3 ){
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    display: block;
+    width: 20rem;
+    margin-top: -26px;
+    
+}
+.v-left >:nth-child(4){
+    font-size: 2rem;
+    display: block;
+    width: 20rem;
+    font-weight: bold;  
+}
+.v-left >:nth-child(5){
+    width: 11rem;
+    bottom: 20px;
+    height: 2rem;
+    position: absolute;
+}
+.v-wrapper{
+    width: 30rem;
+}
+
+@media screen and (max-width:856px) {
+    .vritsual{
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .v-left >:nth-child(5){
+        bottom: -27px;
+    }
+}
